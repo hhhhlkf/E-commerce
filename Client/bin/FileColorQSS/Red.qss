@@ -1,0 +1,1955 @@
+/*背景颜色*/
+QWidget#title_Widget
+{
+    background-color:rgb(236,65,65);
+}
+QWidget#centralwidget
+{
+     background-color:rgb(255,255,255);
+}
+QWidget#SignInForm
+{
+	   background-color:rgb(255,255,255);
+}
+/*标题LOGO文件*/
+QLabel#label_title_logo
+{
+	border-image:url(./images/Redtitle.png);
+	    background-color:rgb(57,175,234);
+
+}
+QWidget#loginwidget
+{
+	border-image: url(./images/电商.svg);
+}
+/*登录界面设计*/
+QLabel#linePassWordlabel
+{
+	color:rgb(48,48,49);
+	border-bottom: rgb(232, 227, 202);
+
+}
+QLabel#lineNamelabel
+{
+	color:rgb(48,48,49);
+	border-bottom: rgb(232, 227, 202);
+
+}
+/*QPushButton#loginbtn
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(255, 153, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}*/
+QLineEdit#lineName
+{
+    
+	background: rgb(232, 227, 202);
+	/*border-radius: 10px;*/
+	padding: 0px 0px 0px 30px;
+	border-bottom: thick double #32a1ce;
+	font-size: 17;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+	 border-radius:10px;
+}
+QLineEdit#linePassWord
+{
+    
+	background: rgb(232, 227, 202);
+	/*border-radius: 10px;*/
+	padding: 0px 0px 0px 30px;
+	border-bottom: thick double #32a1ce;
+	font-size: 17;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+	 border-radius:10px;
+}
+QWidget#backwidget
+{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+}
+QWidget#logInForm
+{
+	background-color:rgb(255,255,255);
+}
+QPushButton::hover#loginbtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(252, 175, 73); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton::pressed#loginbtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(252, 175, 73); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton#loginbtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(255, 153, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton#signBtn,#forgetBtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(255, 153, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton::hover#signBtn,#forgetBtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(252, 175, 73); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton::pressed#signBtn,#forgetBtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(252, 175, 73); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton#forgetBtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(255, 153, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton::hover#forgetBtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(252, 175, 73); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+QPushButton::pressed#forgetBtn
+{
+	 border:1px solid rgb(253,253,253); 
+	background-color: rgb(252, 175, 73); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+	 border-color: rgb(255, 255, 255);
+}
+/*关闭按钮*/
+QPushButton#pushButton_close
+{
+	border-image:url(images/关闭初始.svg);
+}
+QPushButton::hover#pushButton_close
+{
+	border-image:url(images/关闭.svg);
+}
+QPushButton::pressed#pushButton_close
+{
+	border-image:url(images/关闭.svg);
+}
+
+
+QPushButton#returnLogBtn
+{
+	border-image:url(images/返回首页.svg);
+}
+QPushButton::hover#returnLogBtn
+{
+	border-image:url(images/返回首页1.svg);
+}
+QPushButton::pressed#returnLogBtn
+{
+	border-image:url(images/返回首页1.svg);
+}
+
+/*最大化按钮*/
+QPushButton#pushButton_max
+{
+	border-image:url(images/最大化.png);
+
+}
+QPushButton::hover#pushButton_max
+{
+	border-image:url(images/最大化.png);
+}
+QPushButton::pressed#pushButton_max
+{
+	border-image:url(images/最大化.png);
+}
+/*最小化按钮*/
+QPushButton#pushButton_min
+{
+	border-image:url(images/最小化初始.svg);
+}
+QPushButton::hover#pushButton_min
+{
+	border-image:url(images/最小化.svg);
+}
+QPushButton::pressed#pushButton_min
+{
+	border-image:url(images/最小化.svg);
+}
+/*迷你按钮*/
+QPushButton#pushButton_mini
+{
+	border-image:url(images/mini.png);
+}
+QPushButton::hover#pushButton_mini
+{
+	border-image:url(images/mini.png);
+}
+QPushButton::pressed#pushButton_mini
+{
+	border-image:url(images/mini.png);
+	border-color: rgb(236,65,65);
+}
+
+
+/*后退按钮*/
+QPushButton#pushButton_title_left
+{
+	border-image:url(images/后退初始.svg); 
+    background-color: rgb(236,65,65);
+    border-radius:10px;
+}
+QPushButton::hover#pushButton_title_left
+{
+	border-image:url(images/后退.svg);
+    
+}
+QPushButton::pressed#pushButton_title_left
+{
+	border-image:url(images/后退.svg);
+
+}
+/*前进按钮*/
+QPushButton#pushButton_title_right
+{
+	border-image:url(images/前进初始化.svg);
+    background-color: rgb(236,65,65);
+    border-radius:10px;
+    
+}
+
+QPushButton::hover#pushButton_title_right
+{
+	border-image:url(images/前进.svg);
+}
+QPushButton::pressed#pushButton_title_right
+{
+	border-image:url(images/前进.svg);
+}
+/*话筒按钮*/
+QPushButton#pushButton_title_listen
+{
+  
+   border-image:url(images/话筒.png);
+}
+
+/*个人中心按钮*/
+QPushButton#pushButton_people
+{
+	border-image:url(images/nonePic.png);
+}
+
+
+/*个人中心按钮*/
+QPushButton#pushButton_name
+{
+	border-image:url(images/btn_people_h.png);
+}
+QPushButton::hover#pushButton_name
+{
+	border-image:url(images/btn_people_h1.png);
+}
+QPushButton::pressed#pushButton_name
+{
+	border-image:url(images/btn_people_h1.png);
+}
+
+QLabel#label_people
+{
+	color: rgb(251,217,217);
+}
+
+QPushButton#pushButton_vip
+{
+	border-image:url(images/vipred.png);
+}
+
+/*皮肤主题按钮*/
+QPushButton#pushButton_cloth
+{
+	border-image:url(images/皮肤初始.svg);
+}
+QPushButton::hover#pushButton_cloth
+{
+	border-image:url(images/皮肤.svg);
+}
+QPushButton::pressed#pushButton_cloth
+{
+	border-image:url(images/皮肤.svg);
+}
+/*设置主题按钮*/
+QPushButton#pushButton_set
+{
+	border-image:url(images/设置初始.svg);
+}
+QPushButton::hover#pushButton_set
+{
+	border-image:url(images/设置.svg);
+}
+QPushButton::pressed#pushButton_set
+{
+	border-image:url(images/设置.svg);
+}
+/*皮肤主题按钮*/
+QPushButton#pushButton_message
+{
+	border-image:url(images/邮件.png);
+}
+
+/*消息提示框*/
+QLabel#label_message_Tip
+{
+	color: rgb(255, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border-radius: 7px;
+}
+
+QLabel#label_shuxian
+{
+	color: rgb(255, 255, 255);
+}
+/*标题输入框*/
+QLineEdit#line_Search
+{
+    
+	background: rgb(236,65,65);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 14;
+	font-family: "微软雅黑";
+	color: rgb(247, 77, 77);
+}
+
+QLineEdit::pressed#line_Search
+{
+	font-size: 14;
+	font-family: "微软雅黑";
+	color:rgb(255,255,255);
+	
+}
+/*标题输入框*/
+QLineEdit#line_Search2
+{
+    
+	background: rgb(194, 194, 194);
+	border-radius: 7px;
+	padding: 0px 0px 0px 30px;
+	font-size: 14;
+	font-family: "微软雅黑";
+	color: rgb(210，210，210);
+}
+
+QLineEdit::pressed#line_Search2
+{
+	font-size: 14;
+	font-family: "微软雅黑";
+	color:rgb(255,255,255);
+	
+}
+/*搜索按钮*/
+QPushButton#pushButton_search
+{
+	border-image:url(images/搜索前.svg);
+}
+
+QPushButton::hover#pushButton_search
+{
+	border-image:url(images/搜索后.svg);
+}
+QPushButton::pressed#pushButton_search
+{
+	border-image:url(images/搜索后.svg);
+}
+QPushButton#ptnscearch2
+{
+	border-image:url(images/搜索.svg);
+}
+
+QPushButton::hover#ptnscearch2
+{
+	border-image:url(images/搜索后.svg);
+}
+QPushButton::pressed#ptnscearch2
+{
+	border-image:url(images/搜索后.svg);
+}
+
+QPushButton#pushButton_like
+{
+	border-image:url(images/心动.png);
+}
+
+QPushButton::pressed#pushButton_like
+{
+	border-image:url(images/心动2.png);
+}
+
+/*音乐播放条*/
+QSlider::add-page:Horizontal#horizontalSlider_music
+{
+	background-color: rgb(205,205,205);height:4px;
+}
+QSlider::sub-page:Horizontal#horizontalSlider_music
+{
+	background-color: rgb(255,78,78);height:4px;
+}
+QSlider::handle:Horizontal#horizontalSlider_music
+{
+	width:14px;border-image: url(images/point_music.png);margin:-4 px -4px;
+}
+QSlider::groove:Horizontal#horizontalSlider_music
+{
+	background:rgb(0, 255, 0);height:4px;
+}
+
+QWidget#widget_tail
+{  
+
+	border-top-style: solid;
+	border-top-color:  rgb(205,205,205);
+	border-top-width: 1;
+}
+
+QPushButton#pushButton_bz
+{
+	border-image:url(images/标准.png);
+}
+
+QPushButton#pushButton_voice
+{
+	border-image:url(images/voice.png);
+}
+
+QPushButton#pushButton_voice2
+{
+	border-image:url(images/voice2.png);
+}
+
+QPushButton#pushButton_listen_all
+{
+	border-image:url(images/all.png);
+
+}
+
+QPushButton#pushButton_list
+{
+	border-image:url(images/listall.png);
+	
+}
+
+QPushButton#pushButton_ci
+{
+	border-image:url(images/词.png);
+	
+}
+/*上一曲*/
+QPushButton#pushButton_life_music
+{
+	border-image:url(images/上一曲1.png);
+}
+
+QPushButton::hover#pushButton_life_music
+{
+	border-image:url(images/上一曲2.png);
+}
+
+QPushButton::pressed#pushButton_life_music
+{
+	border-image:url(images/上一曲1.png);
+}
+
+/*下一曲*/
+QPushButton#pushButton_right_music
+{
+	border-image:url(images/下一曲1.png);
+}
+
+QPushButton::hover#pushButton_right_music
+{
+	border-image:url(images/下一曲2.png);
+}
+
+QPushButton::pressed#pushButton_right_music
+{
+	border-image:url(images/下一曲1.png);
+}
+
+/*暂停*/
+QPushButton#pushButton_stop
+{
+	border-image:url(images/开始.png);
+}
+QPushButton::checked#pushButton_stop
+{
+	border-image:url(images/暂停.png);
+}
+
+
+/*
+QLabel#label_pro
+{
+	border-image:url(images/pro1.png);
+}
+*/
+
+/*音乐条时间*/
+QLabel#label_time
+{
+	color: rgb(175, 175, 175);
+}
+/*音乐条总时间*/
+QLabel#label_time_long
+{
+	color: rgb(175, 175, 175);
+}
+
+
+QScrollArea#scrollArea
+{
+	background-color:white; 
+	border:0px;
+	border-right: 1px solid rgb(205,205,205);
+}
+
+QWidget#scrollAreaWidgetContents
+{
+	background:rgb(255,255,255);
+
+}
+/*发现音乐*/
+QListWidget#listT1
+{
+
+	padding-top:13px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+	padding-left:15px;	
+}
+
+QListWidget#ShoppingCartList
+{
+	padding-top:13px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+	padding-left:15px;	
+}
+QListWidget::Item#ShoppingCartList
+{
+	height:90px;
+	border:0px solid rgb(255,255,255);
+	color:rgb(55,55,55);
+	/*background:rgb(255,255,255);*/
+}
+QListWidget#HistoryList
+{
+	padding-top:13px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+	padding-left:15px;	
+}
+QListWidget::Item#HistoryList
+{
+	height:90px;
+	border:0px solid rgb(255,255,255);
+	color:rgb(55,55,55);
+	/*background:rgb(255,255,255);*/
+}
+QListWidget#CommodityselectList
+{
+	padding-top:13px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+	padding-left:15px;	
+}
+QListWidget::Item#CommodityselectList
+{
+	height:90px;
+	border:0px solid rgb(255,255,255);
+	color:rgb(55,55,55);
+	/*background:rgb(255,255,255);*/
+}
+QCheckBox#CheckBox
+{
+	color: rgb(100, 100, 100);
+}
+QListWidget::Item:hover#HistoryList
+{
+	background:rgb(246,246,247);	
+}
+QListWidget::Item:hover#ShoppingCartList
+{
+	background:rgb(246,246,247);	
+}
+QListWidget::Item:hover#CommodityselectList
+{
+	background:rgb(246,246,247);	
+}
+/*去除焦点虚线*/
+*
+{
+	outline:0px;
+}
+
+QListWidget::Item#listT1
+{
+	
+	height:36;
+	border:0px solid rgb(255,255,255);	
+	padding-top:1px;
+
+}
+
+QListWidget::Item:hover#listT1
+{
+	background:rgb(246,246,247);	
+}
+/*选中*/
+QListWidget::Item:selected#listT1
+{
+	font-size:16px;
+	font-weight: bold;
+	color:rgb(55,55,55);
+	border:0px;
+	background:rgb(246,246,247);	
+}
+/*我的音乐*/
+QLabel#label_my_music
+{
+	padding-left:15px;
+	color:rgb(159,159,159);
+}
+QListWidget#listT2
+{
+	padding-top:5px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+	padding-left:15px;	
+}
+/*列表2*/
+QListWidget::Item#listT2
+{
+	
+	height:38;
+	border:0px solid rgb(255,255,255);	
+
+}
+
+QListWidget::Item:hover#listT2
+{
+	background:rgb(246,246,247);	
+}
+/*选中*/
+QListWidget::Item:selected#listT2
+{
+	font-size:16px;
+	font-weight: bold;
+	color:rgb(55,55,55);
+	border:0px;
+	background:rgb(246,246,247);	
+}
+
+QLabel#label_create_music
+{
+	padding-top:5px;
+	padding-left:15px;
+	color:rgb(159,159,159);
+}
+/*加*/
+QPushButton#pushButton_add
+{
+	padding-top:4px;
+	border-image:url(images/加.png);
+}
+/*list3*/
+QListWidget#listT3
+{
+	padding-top:2px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+	padding-left:15px;	
+}
+
+QListWidget::Item#listT3
+{
+	
+	height:220px;
+	border:0px solid rgb(255,255,255);
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);	
+
+}
+
+QListWidget::Item:hover#listT3
+{
+	background:rgb(246,246,247);	
+}
+/*选中*/
+QListWidget::Item:selected#listT3
+{
+	font-size:16;
+	color:rgb(55,55,55);
+	border:0px;
+	background:rgb(246,246,247);	
+}
+
+/*QTabWidget 的样式*/
+QTabWidget::pane#tabselectWidget
+{
+	top:10px;
+    border: none;  
+}
+/*个性推荐*/
+QTabBar::tab#tabselectWidget
+{ 
+	background:white;
+	border-bottom: 3px solid rgb(255,255,255);
+	font-family:"微软雅黑";
+	font-size:16px;
+	padding-left:5px;
+	padding-right:5px;
+	min-width: 55px;
+	min-height:20px;		
+}
+
+QTabBar::tab:selected#tabselectWidget
+{
+	border-bottom: 3px solid rgb(236,65,65);
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+QTabWidget::pane
+{
+	top:10px;
+    border: none;  
+}
+/*个性推荐*/
+QTabBar::tab
+{ 
+	background:white;
+	border-bottom: 3px solid rgb(255,255,255);
+	font-family:"微软雅黑";
+	font-size:16px;
+	padding-left:5px;
+	padding-right:5px;
+	min-width: 85px;
+	min-height:30px;		
+}
+
+QTabBar::tab:selected
+{
+	border-bottom: 3px solid rgb(236,65,65);
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+
+/*个人中心*/
+QLabel#label_dy
+{
+	color: rgb(51,51,51);
+	font-size:18px;
+	font-weight: bold;
+}
+
+QLabel#label_at
+{
+	color: rgb(51,51,51);
+	font-size:18px;
+	font-weight: bold;
+}
+
+QLabel#label_fans
+{
+	color: rgb(51,51,51);
+	font-size:18px;
+	font-weight: bold;
+}
+
+QWidget#personForm
+{
+	border:0px solid gray; 
+	background:white;
+	border-radius:5px;
+}
+QWidget#DeveloperDemo
+{
+	border:0px solid gray; 
+	background: rgb(255, 253, 250);
+	border-radius:5px;
+}
+/*个人中心按钮*/
+
+QPushButton#pushButton_dynamic
+{
+	background:#00FFFFFF;
+	color:rgb(102,102,102);
+}
+
+QPushButton#pushButton_attention
+{
+	background:#00FFFFFF;
+	color:rgb(102,102,102);
+}
+QPushButton#pushButton_fans
+{
+	background:#00FFFFFF;
+	color:rgb(102,102,102);
+}
+/*个人签到按钮*/
+QPushButton#closeBtn
+{
+	background:#00FFFFFF;
+	border-image:url(images/关闭它.svg);
+}
+QPushButton:hover#closeBtn
+{
+	background:#00FFFFFF;
+	border-image:url(images/关闭时.svg);
+}
+QPushButton#minisizeBtn
+{
+	background:#00FFFFFF;
+	border-image:url(images/减时.svg);
+}
+QPushButton:hover#minisizeBtn
+{
+	background:#00FFFFFF;
+	border-image:url(images/减.svg);
+}
+QPushButton#createBtn
+{
+	background:#00FFFFFF;
+	border-image:url(images/确认中.svg);
+}
+QPushButton:hover#createBtn
+{
+	background:#00FFFFFF;
+	border-image:url(images/确认中1.svg);
+}
+QPushButton#pushButton_sign
+{
+	background:#00FFFFFF;
+	border-image:url(images/签到.png);
+}
+QPushButton:hover#pushButton_sign
+{
+	background:#00FFFFFF;
+	border-image:url(images/签到2.png);
+}
+/*会员中心*/
+QPushButton#pushButton_Center
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_Center
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+
+QPushButton#pushButton_Class
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_Class
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+QPushButton#pushButton_store
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_store
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+QPushButton#pushButton_person_mess
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_person_mess
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+QPushButton#pushButton_binding
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_binding
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+QPushButton#pushButton_myservice
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_myservice
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+QPushButton#pushButton_myquit
+{
+	background:#00FFFFFF;
+}
+QPushButton:hover#pushButton_myquit
+{
+	border:0px;
+	background:rgb(246,246,247);
+}
+
+/*字体颜色48,48,49*/
+/*会员中心*/
+
+QLabel#label_center
+{
+	border-image:url(images/中心.png);
+}
+QLabel#label_center2
+{
+	color:rgb(48,48,49);
+}
+QLabel#label_center3
+{
+	color:rgb(204,204,204);
+}
+
+QLabel#label_class
+{
+	border-image:url(images/等级.png);
+}
+
+QLabel#label_class2
+{
+	color:rgb(48,48,49);
+}
+
+QLabel#label_class3
+{
+	color:rgb(159,159,160);
+}
+QLabel#label_store
+{
+	border-image:url(images/商城.png);
+}
+
+QLabel#label_store2
+{
+	color:rgb(48,48,49);
+}
+
+QLabel#label_person_message
+{
+	border-image:url(images/个人信息.png);
+}
+QLabel#label_person_message2
+{
+	color:rgb(48,48,49);
+}
+QLabel#UserName
+{
+	color:rgb(48,48,49);
+	font-family: "微软雅黑";
+	font-size: 15;
+	border-image:url(images/我的.svg);
+}
+QLabel#PhoneNum
+{
+	color:rgb(48,48,49);
+	font-family: "微软雅黑";
+	font-size: 15;
+	border-image:url(images/电话.svg);
+}
+QLabel#Password
+{
+	color:rgb(48,48,49);
+	font-family: "微软雅黑";
+	font-size: 15;
+	border-image:url(images/密码.svg);
+
+}
+QLabel#Email
+{
+	color:rgb(48,48,49);
+	font-family: "微软雅黑";
+	font-size: 15;
+	border-image:url(images/email.svg);
+
+}
+QLabel#DeveloperName
+{
+	border-image:url(images/Electricalshop.svg);
+}
+Qlabel#DevVersion
+{
+	color:rgb(48,48,49);
+	font-family: "微软雅黑";
+	font-size: 20;
+}
+QLineEdit#NameEdit
+{
+    
+	background: rgb(232, 227, 202);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 17;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+}
+QLineEdit#PasswordEdit
+{
+    
+	background: rgb(232, 227, 202);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 15;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+}
+QLineEdit#PhoneNumEdit
+{
+    
+	background: rgb(232, 227, 202);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 15;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+}
+
+QLineEdit#wrongEdit2
+{
+    
+/*	background: rgb(232, 227, 202);*/
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 15;
+
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+}
+QLineEdit#wrongEdit2
+{
+    
+/*	background: rgb(232, 227, 202);*/
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 15;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+}
+QLineEdit#EmailEdit
+{
+    
+	background: rgb(232, 227, 202);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 15;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+}
+QLabel#label_binding
+{
+	border-image:url(images/绑定.png);
+}
+QLabel#label_binding2
+{
+	color:rgb(48,48,49);
+}
+QLabel#label_binding3
+{
+	border-image:url(images/微博.png);
+}
+
+
+QLabel#label_service
+{
+	border-image:url(images/客服.png);
+}
+QLabel#label_service2
+{
+	color:rgb(48,48,49);
+}
+
+QLabel#label_quit
+{
+	border-image:url(images/退出.png);
+}
+QLabel#label_quit2
+{
+	color:rgb(48,48,49);
+}
+
+/*线*/
+QLabel#label_line1
+{
+	border:1px solid rgb(238,238,238); 
+}
+QLabel#label_line2
+{
+	border:1px solid rgb(238,238,238); 
+}
+QLabel#label_line3
+{
+	border:1px solid rgb(238,238,238); 
+}
+QLabel#label_line4
+{
+	border:1px solid rgb(238,238,238); 
+}
+
+/*个人中心L*/
+QLabel#label_L
+{
+	border-image:url(images/btn_right_1_n.png);
+}
+QLabel#label_L2
+{
+	border-image:url(images/btn_right_1_n.png);
+}
+QLabel#label_L3
+{
+	border-image:url(images/btn_right_1_n.png);
+}
+QLabel#label_L4
+{
+	border-image:url(images/btn_right_1_n.png);
+}
+QLabel#label_L5
+{
+	border-image:url(images/btn_right_1_n.png);
+}
+QLabel#label_L6
+{
+	border-image:url(images/btn_right_1_n.png);
+}
+
+/*轮播图按钮*/
+
+QPushButton#btnL
+{
+
+	border-image:url(images/后退.png); 
+    background-color: rgb(59,70,68,100);
+    border-radius:12px;
+}
+
+QPushButton#btnR
+{
+	border-image:url(images/前进.png);
+    background-color: rgb(59,70,68,100);
+    border-radius:12px;
+}
+/*推荐歌单*/
+QLabel#lab_T
+{
+	font-family:"微软雅黑";
+	border-bottom: 3px solid rgb(236,65,65);
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+/*推荐歌单按钮*/
+QPushButton#ptn_cen
+{
+  border-image:url(images/btn_right_1_n.png);
+}
+/*5个图片*/
+QWidget#widgetP1
+{
+	border-image:url(images/widget1.png);
+}
+
+QWidget#widgetP2
+{
+	border-image:url(images/widget2.png);
+}
+QWidget#widgetP3
+{
+	border-image:url(images/widget3.png);
+}
+QWidget#widgetP4
+{
+	border-image:url(images/widget4.png);
+}
+QWidget#widgetP5
+{
+	border-image:url(images/widget5.png);
+}
+
+/*专属定制部分*/
+QLabel#lab_per
+{
+	font-family:"微软雅黑";
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+
+QLabel#lab_per2
+{
+	font-family:"微软雅黑";
+	color: rgb(159,159,159);
+}
+QTextEdit#textEdit
+{
+	font-family:"宋体";
+	font-size: 15px;
+	font-weight: bold;
+/*	border-radius: 5px;*/
+	border-color: rgb(255, 0, 0);
+}
+QLabel#lab_per2_2
+{
+	font-family:"微软雅黑";
+	color: rgb(159,159,159);
+}
+QLabel#lab_per3
+{
+	font-family:"微软雅黑";
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+/*爱上音乐为伴的下午部分*/
+QWidget#widgetPer1
+{
+	border-image:url(images/Gallery/widgetPer1.png);
+}
+QWidget#widgetPer2
+{
+	border-image:url(images/Gallery/widgetPer2.png);
+}
+QWidget#widgetPer3
+{
+	border-image:url(images/Gallery/widgetPer3.png);
+}
+QWidget#widgetPer4
+{
+	border-image:url(images/Gallery/widgetPer4.png);
+}
+QWidget#widgetPer5
+{
+	border-image:url(images/Gallery/widgetPer5.png);
+}
+
+/*左右按钮*/
+/*右边*/
+QPushButton#btnPerR
+{
+	border-image:url(images/Gallery/前进.png);
+    background-color: rgb(235,235,235);
+    border-radius:12px;
+}
+/*左边*/
+QPushButton#btnPerL
+{
+	border-image:url(images/Gallery/后退.png);
+    background-color: rgb(235,235,235);
+    border-radius:12px;
+}
+QPushButton#btnPerR_2
+{
+	border-image:url(images/Gallery/前进.png);
+    background-color: rgb(235,235,235);
+    border-radius:12px;
+}
+/*左边*/
+QPushButton#btnPerL_2
+{
+	border-image:url(images/Gallery/后退.png);
+    background-color: rgb(235,235,235);
+    border-radius:12px;
+}
+/*歌单部分*/
+QWidget#picTitle
+{
+	border-image:url(images/pictureMusic/huayu0.png);
+}
+
+QWidget#widMus1
+{
+	border-image:url(images/pictureMusic/huayu1.png);
+}
+
+QWidget#widMus2
+{
+	border-image:url(images/pictureMusic/huayu2.png);
+}
+
+QWidget#widMus3
+{
+	border-image:url(images/pictureMusic/huayu3.png);
+}
+
+QWidget#widMus4
+{
+	border-image:url(images/pictureMusic/huayu4.png);
+}
+
+QPushButton#ptnChange
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(0,179,255); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+}
+
+QListWidget::Item#ChatList
+{
+	width: 811px;
+}
+QPushButton::hover#ptnChange
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(0,187,255);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+}
+QPushButton#ptnBuy
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(255, 153, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::hover#ptnBuy
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(255, 230, 0);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton#btnDel
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(255, 25, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::hover#btnDel
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(55,55,55);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::pressed#btnDel
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(55,55,55);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton#btnDelH
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(255, 25, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::hover#btnDelH
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(255, 123, 0);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton#btnBuy
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(255, 25, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::hover#btnBuy
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(255, 0, 98);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::pressed#btnBuy
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(255, 0, 98);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton#btnRes
+{
+	 border:1px solid rgb(216,216,216); 
+	background-color: rgb(255, 153, 0); 
+	color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+QPushButton::hover#btnRes
+{
+	 border:1px solid rgb(216,216,216); 
+	 background-color:rgb(255, 230, 0);
+	 color: rgb(255, 255, 255);
+	 border-radius:15px;
+	 font-family: "微软雅黑";
+}
+/*华语按钮*/
+QPushButton#ptn0
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+
+}
+
+QPushButton::hover#ptn0
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptn0
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*流行按钮*/
+QPushButton#ptn1
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+QPushButton::hover#ptn1
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptn1
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*摇滚按钮*/
+QPushButton#ptn2
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+QPushButton::hover#ptn2
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptn2
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*民谣按钮*/
+QPushButton#ptn3
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+QPushButton::hover#ptn3
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptn3
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+QLineEdit#lineEdit
+{
+    
+	background: rgb(232, 227, 202);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 17;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+	padding-left: 14px;
+}
+QLineEdit#lineEdit_2
+{
+    
+	background: rgb(232, 227, 202);
+	border-radius: 10px;
+	padding: 0px 0px 0px 30px;
+	font-size: 17;
+	font-family: "微软雅黑";
+	color: rgb(15,15,15);
+	padding-left: 10px;
+}
+/*电子按钮 与剩下的部分*/
+QPushButton#ptn4,#ptn5,#ptn6,#ptn7,#ptn8,#ptn9
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+QPushButton::hover#ptn4,::hover#ptn5,::hover#ptn6,
+::hover#ptn7,::hover#ptn8,::hover#ptn9
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptn4,::checked#ptn5,::checked#ptn6,
+::checked#ptn7,::checked#ptn8,::checked#ptn9
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*排行榜内容*/
+QLabel#labRankl
+{
+    font-family:"微软雅黑";
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+QLabel#CommodityHistory
+{
+    font-family:"微软雅黑";
+	color: rgb(55,55,55);
+	font-size:20px;
+	font-weight: bold;
+}
+/*查看全部*/
+QLabel#labmore1,#labmore2
+{
+   font-family:"微软雅黑";
+   font-size:12px;
+   color: rgb(103,103,103);
+}
+QLabel#CommodityName
+{
+    font-family:"微软雅黑";
+	color: rgb(55,55,55);
+	font-size:17px;
+	font-weight: bold;
+}
+/*榜单图片*/
+QWidget#widUp
+{
+	border-image:url(images/ranking/widUp.png);
+}
+
+QWidget#widUp2
+{
+	border-image:url(images/ranking/widUp2.png);
+}
+/*列表框部分*/
+QListWidget#listCont,#listCont2
+{
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+}
+/*
+QListWidget::Item#listCont,::Item#listCont2
+{
+	height:36;
+	border:0px solid rgb(255,255,255);	
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+}
+*/
+QListWidget::Item:hover#listCont,::Item:hover#listCont2
+{
+	border-radius:2px;
+	background:rgb(239,239,239);
+}
+/*选中*/
+QListWidget::Item:selected#listCont,::Item:selected#listCont2
+{
+	border-radius:2px;
+	background:rgb(239,239,239);
+}
+
+/*歌手模块*/
+/*语种*/
+QPushButton#ptnAll1,#ptnChinese,#ptnEurope,
+#ptnJapan,#ptnKorea,#ptnOther1
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+
+QPushButton::hover#ptnAll1,::hover#ptnChinese,::hover#ptnEurope,
+::hover#ptnJapan,::hover#ptnKorea,::hover#ptnOther1
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptnAll1,::checked#ptnChinese,::checked#ptnEurope,
+::checked#ptnJapan,::checked#ptnKorea,::checked#ptnOther1
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*分类*/
+QPushButton#ptnAll2,#ptnMan,#ptnWomen,
+#ptnBank
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+
+QPushButton::hover#ptnAll2,::hover#ptnMan,::hover#ptnWomen,
+::hover#ptnBank
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptnAll2,::checked#ptnMan,::checked#ptnWomen,
+::checked#ptnBank
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*筛选*/
+QPushButton#ptnhot,#ptnA,#ptnB,#ptnC,#ptnD,#ptnE,#ptnF,#ptnG,#ptnH,
+#ptnI,#ptnJ,#ptnK,#ptnL,#ptnM,#ptnN,#ptnO,#ptnP,#ptnQ,#ptnR,#ptnS,#ptnT,
+#ptnU,#ptnV,#ptnW,#ptnX,#ptnY,#ptnZ,#ptnOH
+{
+	border:0px;
+	color:rgb(103,103,103);
+	border-radius:10px;
+}
+
+
+QPushButton::hover#ptnhot,::hover#ptnA,::hover#ptnB,::hover#ptnC,::hover#ptnD,
+::hover#ptnE,::hover#ptnF,::hover#ptnG,::hover#ptnH,
+::hover#ptnI,::hover#ptnJ,::hover#ptnK,::hover#ptnL,::hover#ptnM,::hover#ptnN,
+::hover#ptnO,::hover#ptnP,::hover#ptnQ,::hover#ptnR,::hover#ptnS,::hover#ptnT,
+::hover#ptnU,::hover#ptnV,::hover#ptnW,::hover#ptnX,::hover#ptnY,::hover#ptnZ,
+::hover#ptnOH
+{
+	border:0px;
+	background:rgb(253,245,245);
+	border-radius:10px;
+}
+
+QPushButton::checked#ptnhot,::checked#ptnA,::checked#ptnB,::checked#ptnC,::checked#ptnD,
+::checked#ptnE,::checked#ptnF,::checked#ptnG,::checked#ptnH,
+::checked#ptnI,::checked#ptnJ,::checked#ptnK,::checked#ptnL,::checked#ptnM,::checked#ptnN,
+::checked#ptnO,::checked#ptnP,::checked#ptnQ,::checked#ptnR,::checked#ptnS,::checked#ptnT,
+::checked#ptnU,::checked#ptnV,::checked#ptnW,::checked#ptnX,::checked#ptnY,::checked#ptnZ,
+::checked#ptnOH
+{
+	border:0px;
+	background:rgb(253,245,245);
+	color:rgb(236,65,65);
+	border-radius:10px;
+}
+
+/*加载歌手*/
+QWidget#widgetSinger0
+{
+	border-image:url(images/singer/singer0.png);
+}
+QWidget#widgetSinger1
+{
+	border-image:url(images/singer/singer1.png);
+}
+QWidget#widgetSinger2
+{
+	border-image:url(images/singer/singer2.png);
+}
+QWidget#widgetSinger3
+{
+	border-image:url(images/singer/singer3.png);
+}
+QWidget#widgetSinger4
+{
+	border-image:url(images/singer/singer4.png);
+}
+QWidget#widgetSinger5
+{
+	border-image:url(images/singer/singer5.png);
+}
+QWidget#widgetSinger6
+{
+	border-image:url(images/singer/singer6.png);
+}
+QWidget#widgetSinger7
+{
+	border-image:url(images/singer/singer7.png);
+}
+QWidget#widgetSinger8
+{
+	border-image:url(images/singer/singer8.png);
+}
+QWidget#widgetSinger9
+{
+	border-image:url(images/singer/singer9.png);
+}
+
+/**/
+QPushButton#ptnSinger0,#ptnSinger1,#ptnSinger2,
+#ptnSinger3,#ptnSinger4
+{
+    border-image:url(images/singer/Mer.png);
+}
+
+/*最新模块*/
+/*最新音乐*/
+QPushButton#ptnMusAll,#ptnMusChinese,#ptnMusEurope,
+#ptnMusKorea,#ptnMusJapan
+{
+    color:rgb(103,103,103);
+	border:0px;
+	background:rgb(255,255,255);
+}
+
+QPushButton:hover#ptnMusAll,:hover#ptnMusChinese,:hover#ptnMusEurope,
+:hover#ptnMusKorea,:hover#ptnMusJapan
+{
+    color:rgb(69,69,69);
+	border:0px;
+	background:rgb(255,255,255);
+}
+
+QPushButton::checked#ptnMusAll,::checked#ptnMusChinese,::checked#ptnMusEurope,
+::checked#ptnMusKorea,::checked#ptnMusJapan
+{
+    color:rgb(69,69,69);
+	font-weight: bold;
+	border:0px;
+	background:rgb(255,255,255);
+}
+/*全部播放*/
+QPushButton#ptnPlayAll
+{
+	border-image:url(images/NewMusic/playAll.png);
+}
+/*全部保存*/
+QPushButton#ptnSaveAll
+{
+	border-image:url(images/NewMusic/saveAll.png);
+}
+
+/**/
+QListWidget#listWidget
+{
+	height:400px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+}
+
+QListWidget::Item#listWidget
+{
+	height:45px;
+	border:0px solid rgb(255,255,255);	
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+}
+
+QListWidget::Item:hover#listWidget
+{
+	border-radius:2px;
+	background:rgb(239,239,239);
+}
+/*选中*/
+QListWidget::Item:selected#listWidget
+{
+	border-radius:2px;
+	background:rgb(239,239,239);
+}
+QListWidget#listAll
+{
+	height:400px;
+	border:0px;
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+}
+
+QListWidget::Item#listAll
+{
+	height:80px;
+	border:0px solid rgb(255,255,255);	
+	color:rgb(55,55,55);
+	background:rgb(255,255,255);
+}
+
+QListWidget::Item:hover#listAll
+{
+	border-radius:2px;
+	background:rgb(239,239,239);
+}
+/*选中*/
+QListWidget::Item:selected#listAll
+{
+	border-radius:2px;
+	background:rgb(239,239,239);
+}
+QPushButton#minusBtn
+{
+	border-image: url(images/302减-方框初始.svg);
+}
+QPushButton::hover#minusBtn
+{
+	border-image: url(images/302减-方框.svg);
+}
+QPushButton::pressed#minusBtn
+{
+	border-image: url(images/302减-方框.svg);
+}
+QPushButton#plusBtn
+{
+	border-image: url(images/301加-方框初始.svg);
+}
+QPushButton::hover#plusBtn
+{
+	border-image: url(images/301加-方框.svg);
+}
+QPushButton::pressed#plusBtn
+{
+	border-image: url(images/301加-方框.svg);
+}
+QTabWidget::pane#tabselectWidget
+{
+	top:10px;
+    border: none;  
+}
+/*个性推荐*/
+QTabBar::tab#tabselectWidget
+{ 
+	background:white;
+	border-bottom: 3px solid rgb(255,255,255);
+	font-family:"微软雅黑";
+	font-size:15px;
+	padding-left:5px;
+	padding-right:5px;
+	min-width: 90px;
+	min-height:15px;		
+}
+
+QTabBar::tab:selected#tabselectWidget
+{
+	border-bottom: 3px solid rgb(236,65,65);
+	color: rgb(55,55,55);
+	font-size:15px;
+	font-weight: bold;
+}
+QScrollBar:vertical{background:transparent; width:8px;}
+QScrollBar::handle:vertical{background:rgb(224,224,224); width:5px; border-radius:3px;}
+QScrollBar::up-arrow:vertical{border:none;}
+QScrollBar::sub-line:vertical{background:transparent;}
+QScrollBar::add-line:vertical{background:transparent;}
+QScrollBar:Horizontal{background:transparent; width:8px;}
+QScrollBar::handle:Horizontal{background:rgb(224,224,224); width:5px; border-radius:3px;}
+QScrollBar::up-arrow:Horizontal{border:none;}
+QScrollBar::sub-line:Horizontal{background:transparent;}
+QScrollBar::add-line:Horizontal{background:transparent;}

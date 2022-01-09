@@ -1,0 +1,5 @@
+﻿#ifndef TRANSOBJECTS_H
+#define TRANSOBJECTS_H
+
+
+#endif // TRANSOBJECTS_H

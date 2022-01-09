@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:lkf1="http://service.linexus.com/"
+    xmlns:lkf2="http://dao.linexus.com/">
+ <SOAP-ENV:Body>
+   <lkf2:updateClient>
+    <arg0>
+     <clientBought>0</clientBought>
+     <clientEmail></clientEmail>
+     <clientId>0</clientId>
+     <clientImage></clientImage>
+     <clientName></clientName>
+     <clientPhone></clientPhone>
+     <clientPwd></clientPwd>
+     <clientSignTime>2021-12-18T16:24:44Z</clientSignTime>
+    </arg0>
+   </lkf2:updateClient>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

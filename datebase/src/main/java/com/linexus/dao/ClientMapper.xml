@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.linexus.dao.ClientMapper">
+    <cache readOnly="true"/>
+    <select id='getClientList' resultType="Client">
+        SELECT *
+        FROM cppdatabase.client;
+    </select>
+
+    <select id="getClientByNameAndPwd" resultType="Client">
+        SELECT *
+        FROM cppdatabase.client
+        WHERE client_name = #{name}
+          AND client_pwd = #{pwd};
+    </select>
+
+    <insert id="InsertClient" parameterType="Client">
+        INSERT INTO cppdatabase.client (client_name, client_phone, client_email, client_sign_time, client_pwd,
+                                        client_bought, client_image)
+        VALUES (#{clientName}, #{clientPhone}, #{clientEmail}, #{clientSignTime}, #{clientPwd},
+                #{clientBought}, #{clientImage});
+    </insert>
+
+    <update id="updateClient" parameterType="Client">
+        UPDATE cppdatabase.client
+        <set>
+            <if test="clientName!=null">client_name=#{clientName},</if>
+            <if test="clientPhone!=null">client_phone=#{clientPhone},</if>
+            <if test="clientEmail!=null">client_email=#{clientEmail},</if>
+            <if test="clientPwd!=null">client_pwd=#{clientPwd},</if>
+            <if test="clientBought!=0">client_bought=#{clientBought},</if>
+            <if test="clientImage!=null">client_image=#{clientImage}</if>
+        </set>
+        WHERE client_id = #{clientId};
+    </update>
+
+    <select id="getClientLikeList" resultType="Client">
+        select *
+        FROM cppdatabase.client
+        WHERE client_name LIKE "%"#{mess}"%";
+    </select>
+
+    <delete id="deleteClientByNameAndPwd">
+        delete
+        FROM cppdatabase.client
+        WHERE client_name = #{name}
+          AND client_pwd = #{pwd};
+    </delete>
+</mapper>

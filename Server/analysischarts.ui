@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>analysisCharts</class>
+ <widget class="QWidget" name="analysisCharts">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1007</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;HarmonyOS Sans SC&quot;;</string>
+      </property>
+      <property name="title">
+       <string>数据分析</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QTableView" name="tableView">
+          <property name="font">
+           <font>
+            <family>HarmonyOS Sans SC</family>
+            <pointsize>9</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>80</number>
+          </attribute>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;HarmonyOS Sans SC&quot;;</string>
+          </property>
+          <property name="title">
+           <string>分析选择：</string>
+          </property>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>50</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>商品销售情况</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>用户购买情况</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="ChooseLabel">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>91</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选择分析对象：</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>80</y>
+             <width>321</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="crashBtn">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>120</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="CrashLabel">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>120</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>刷新表格：</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>150</y>
+             <width>321</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>190</y>
+             <width>331</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>HarmonyOS Sans SC</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+             <stylestrategy>PreferAntialias</stylestrategy>
+            </font>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>111</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>全部选择</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>20</y>
+              <width>131</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>特定查找对象</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QComboBox" name="comboBoxbbegin">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>300</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ChooseLabel_2">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>260</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选择X轴范围：</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBoxafter">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>300</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ChooseLabel_3">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>300</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>到</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ChooseLabel_4">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>300</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>从</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTabWidget" name="tabselectWidget1">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>bin/images/Pie.ico</normaloff>bin/images/Pie.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>饼图</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QLabel" name="label_anaylsis">
+           <property name="geometry">
+            <rect>
+             <x>12</x>
+             <y>22</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>分析数据</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnDrawPieChart">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>23</y>
+             <width>25</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="pie_size">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>22</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>SIZE</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="spinPieSize">
+           <property name="geometry">
+            <rect>
+             <x>383</x>
+             <y>27</y>
+             <width>52</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.700000000000000</double>
+           </property>
+          </widget>
+          <widget class="QLabel" name="theme_label">
+           <property name="geometry">
+            <rect>
+             <x>441</x>
+             <y>22</y>
+             <width>24</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>主题</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="cBoxTheme">
+           <property name="geometry">
+            <rect>
+             <x>471</x>
+             <y>28</y>
+             <width>73</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;HarmonyOS Sans SC&quot;;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Light</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BlueCerulean</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dark</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BrownSand</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BlueNcs</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HighContrast</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BlueIcy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Qt</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>20</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_search">
+           <property name="geometry">
+            <rect>
+             <x>203</x>
+             <y>25</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>label_anaylsis</zorder>
+          <zorder>lineEdit</zorder>
+          <zorder>btnDrawPieChart</zorder>
+          <zorder>pie_size</zorder>
+          <zorder>spinPieSize</zorder>
+          <zorder>theme_label</zorder>
+          <zorder>cBoxTheme</zorder>
+          <zorder>pushButton_search</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="QChartView" name="chartViewBar">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>bin/images/Line.ico</normaloff>bin/images/Line.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>折线图</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>12</x>
+             <y>22</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>分析数据</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnDrawPieChart_2">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>23</y>
+             <width>25</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ChartSize">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>22</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>SIZE</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="spinPieSize_2">
+           <property name="geometry">
+            <rect>
+             <x>383</x>
+             <y>27</y>
+             <width>52</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QLabel" name="theme_label2">
+           <property name="geometry">
+            <rect>
+             <x>441</x>
+             <y>22</y>
+             <width>24</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>主题</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="cBoxTheme_2">
+           <property name="geometry">
+            <rect>
+             <x>471</x>
+             <y>28</y>
+             <width>73</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;HarmonyOS Sans SC&quot;;
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Light</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BlueCerulean</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dark</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BrownSand</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BlueNcs</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HighContrast</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BlueIcy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Qt</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>20</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_search_2">
+           <property name="geometry">
+            <rect>
+             <x>203</x>
+             <y>25</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>lineEdit_2</zorder>
+          <zorder>label_2</zorder>
+          <zorder>btnDrawPieChart_2</zorder>
+          <zorder>ChartSize</zorder>
+          <zorder>spinPieSize_2</zorder>
+          <zorder>theme_label2</zorder>
+          <zorder>cBoxTheme_2</zorder>
+          <zorder>pushButton_search_2</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="QChartView" name="chartViewBar_2">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

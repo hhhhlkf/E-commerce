@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.linexus.dao.OrderMapper">
+<!--    <cache readOnly="true"/>-->
+    <select id="getOrderList" resultType="Order">
+        SELECT *
+        FROM cppdatabase.order
+        WHERE order_check = 1;
+    </select>
+
+    <select id="getOrderListByInfo" resultType="Order">
+        SELECT * FROM cppdatabase.order
+        <where>
+            <choose>
+                <when test="orderId!= 0">
+                    AND order_id = #{orderId}
+                </when>
+                <when test="orderProductId!=0">
+                    AND order_product_id = #{orderProductId}
+                </when>
+                <when test="orderProductName!= null">
+                    AND order_product_name = #{orderProductName}
+                </when>
+                <when test="orderClient!=null">
+                    AND order_client = #{orderClient}
+                </when>
+                <when test="orderClientId!=0 and orderCheck!=0 and orderHide!=0">
+                    AND order_client_id = #{orderClientId} AND order_check = #{orderCheck} AND
+                    order_hide = #{orderHide};
+                </when>
+                <when test="orderClientId!=0 and orderHide!=0">
+                    AND order_client_id = #{orderClientId} AND order_hide = #{orderHide};
+                </when>
+                <otherwise>
+                    AND order_id=0;
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <insert id="addOrder" parameterType="Order">
+        INSERT INTO cppdatabase.order (order_product_name, order_product_num, order_product_style, order_product_id,
+                                       order_cost, order_time, order_client, order_client_id,order_check,order_hide)
+        VALUES (#{orderProductName}, #{orderProductNum}, #{orderProductStyle}, #{orderProductId}, #{orderCost},
+                #{orderTime}, #{orderClient}, #{orderClientId},#{orderCheck},#{orderHide});
+    </insert>
+
+    <select id="getOrderLikeList" resultType="Order">
+        SELECT *
+        FROM cppdatabase.order
+        WHERE order_product_name LIKE "%"#{mess}"%"
+        OR order_product_style LIKE "%"#{mess}"%"
+           OR order_client LIKE "%"#{mess}"%";
+    </select>
+
+    <select id="getOrderListHistory" resultType="Order">
+        SELECT *
+        FROM cppdatabase.order
+        WHERE order_check = -1;
+    </select>
+
+    <update id="updateHistory" parameterType="Order">
+        UPDATE cppdatabase.order
+        <set>
+            <if test="orderCheck!=0">order_check=#{orderCheck},</if>
+            <if test="orderHide!=0">order_hide=#{orderHide}</if>
+        </set>
+        WHERE order_id = #{orderId};
+    </update>
+
+    <delete id="deleteShoppingCart" parameterType="Order">
+        DELETE
+        FROM cppdatabase.order
+        WHERE order_id = #{orderId} AND
+        order_client_id = #{orderClientId}
+        AND order_product_id = #{orderProductId};
+    </delete>
+</mapper>

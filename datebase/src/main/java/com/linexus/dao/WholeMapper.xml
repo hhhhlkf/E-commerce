@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.linexus.dao.WholeMapper">
+    <cache readOnly="true"/>
+    <select id='getClientList' resultType="Client">
+        SELECT *
+        FROM cppdatabase.client;
+    </select>
+
+    <select id="getClientByNameAndPwd" resultType="Client">
+        SELECT *
+        FROM cppdatabase.client
+        WHERE client_name = #{name}
+          AND client_pwd = #{pwd};
+    </select>
+
+    <insert id="InsertClient" parameterType="Client">
+        INSERT INTO cppdatabase.client (client_name, client_phone, client_email, client_sign_time, client_pwd,
+                                        client_bought, client_image)
+        VALUES (#{clientName}, #{clientPhone}, #{clientEmail}, #{clientSignTime}, #{clientPwd},
+                #{clientBought}, #{clientImage});
+    </insert>
+
+    <update id="updateClient" parameterType="Client">
+        UPDATE cppdatabase.client
+        SET client_pwd=#{clientPwd},
+            client_phone=#{clientPhone}
+        WHERE client_name = #{clientName};
+    </update>
+
+    <select id="getClientLikeList" resultType="Client">
+        select *
+        FROM cppdatabase.client
+        WHERE client_name LIKE "%"#{mess}"%";
+    </select>
+
+    <delete id="deleteClientByNameAndPwd">
+        delete
+        FROM cppdatabase.client
+        WHERE client_name = #{name}
+          AND client_pwd = #{pwd};
+    </delete>
+
+    <select id="getProductTypeByProName" resultType="ProductType">
+        SELECT *
+        from cppdatabase.product_type
+        WHERE type_product = #{proName};
+    </select>
+
+    <insert id="addProductType" parameterType="ProductType">
+        INSERT INTO cppdatabase.product_type
+            (type_name, type_id, type_product, type_product_id)
+        VALUES (#{typeName}, #{typeId}, #{typeProduct}, #{typeProductId});
+    </insert>
+
+    <delete id="deleteProductTypeByName">
+        DELETE
+        FROM cppdatabase.product_type
+        WHERE type_product = #{name};
+    </delete>
+
+    <select id="getProductList" resultType="Product">
+        SELECT *
+        FROM cppdatabase.product
+        <choose>
+            <when test="choose==1">
+                ORDER BY product_buy_num DESC LIMIT 10;
+            </when>
+            <when test="choose==2">
+                ORDER BY product_buy_num DESC;
+            </when>
+        </choose>
+    </select>
+
+    <select id="getProductListByInfo" resultType="Product">
+        SELECT * FROM cppdatabase.product
+        <where>
+            <if test="productId!=0">
+                product_id = #{productId}
+            </if>
+            <if test="productName!=null">
+                AND product_name = #{productName}
+            </if>
+            <if test="productImage!=null">
+                AND product_image = #{productImage}
+            </if>
+            <if test="productDiscount!=0">
+                AND product_discount &lt; 1
+            </if>
+        </where>
+    </select>
+    <insert id="addProduct" parameterType="Product">
+        INSERT INTO cppdatabase.product (product_name, product_price, product_num, product_buy_num, product_image,
+                                         product_discount)
+        VALUES (#{productName}, #{productPrice}, #{productNum}, #{productBuyNum}, #{productImage}, #{productDiscount})
+    </insert>
+
+    <delete id="deleteProductByInfo">
+        DELETE FROM cppdatabase.product
+        <where>
+            <if test="product_id!=0">
+                product_id=#{productId}
+            </if>
+            <if test="product_name!=null">
+                AND product_name=#{productName}
+            </if>
+        </where>
+    </delete>
+
+    <update id="updateProductByInfo">
+        UPDATE cppdatabase.product
+        <set>
+            <if test="productName!=null">product_name=#{productName},</if>
+            <if test="productPrice!=0">product_price=#{productPrice},</if>
+            <if test="productNum!=-1">product_num=#{productNum},</if>
+            <if test="productImage!=null">product_image=#{productImage},</if>
+            <if test="productDiscount!=0">product_discount=#{productDiscount}</if>
+        </set>
+        WHERE product_id = #{productId};
+    </update>
+
+    <select id="getProductLikeList" resultType="Product">
+        SELECT *
+        FROM cppdatabase.product
+        WHERE product_name LIKE "%"#{mess}"%";
+    </select>
+    <select id="getOrderList" resultType="Order">
+        SELECT *
+        FROM cppdatabase.order
+        WHERE order_check = 1;
+    </select>
+
+    <select id="getOrderListByInfo" resultType="Order">
+        SELECT * FROM cppdatabase.order
+        <where>
+            <choose>
+                <when test="orderId!= 0">
+                    AND order_id =#{orderId}
+                </when>
+                <when test="orderProductId!=0">
+                    AND order_product_id = #{orderProductId}
+                </when>
+                <when test="orderClientId!=0 and orderHide!=0">
+                    AND order_client_id = #{orderClientId} AND order_hide = #{orderHide};
+                </when>
+                <otherwise>
+                    AND order_id=0;
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <insert id="addOrder" parameterType="Order">
+        INSERT INTO cppdatabase.order (order_product_name, order_product_num, order_product_style, order_product_id,
+                                       order_cost, order_time, order_client, order_client_id)
+        VALUES (#{orderProductName}, #{orderProductNum}, #{orderProductStyle}, #{orderProductId}, #{orderCost},
+                #{orderTime}, #{orderClient}, #{orderClientId});
+    </insert>
+
+    <select id="getOrderLikeList" resultType="Order">
+        SELECT *
+        FROM cppdatabase.order
+        WHERE order_product_name LIKE "%"#{mess}"%"
+        OR order_product_style LIKE "%"#{mess}"%"
+           OR order_client LIKE "%"#{mess}"%";
+    </select>
+
+    <select id="getOrderListHistory" resultType="Order">
+        SELECT *
+        FROM cppdatabase.order
+        WHERE order_check = -1;
+    </select>
+
+    <update id="updateHistory" parameterType="Order">
+        UPDATE cppdatabase.order
+        <set>
+            <if test="orderCheck!=0">order_check=#{orderCheck},</if>
+            <if test="orderHide!=0">order_hide=#{orderHide}</if>
+        </set>
+        WHERE order_id = #{orderId};
+    </update>
+
+    <delete id="deleteShoppingCart" parameterType="Order">
+        DELETE
+        FROM cppdatabase.order
+        WHERE order_id = #{orderId} AND
+            order_client_id = #{orderClientId}
+          AND order_product_id = #{orderProductId};
+    </delete>
+</mapper>

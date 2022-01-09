@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.linexus.dao.ProductMapper">
+    <cache readOnly="true"/>
+    <select id="getProductList" resultType="Product">
+        SELECT *
+        FROM cppdatabase.product
+        <choose>
+            <when test="choose==1">
+                ORDER BY product_buy_num DESC LIMIT 10;
+            </when>
+            <when test="choose==2">
+                ORDER BY product_buy_num DESC;
+            </when>
+        </choose>
+    </select>
+
+    <select id="getProductListByInfo" resultType="Product">
+        SELECT * FROM cppdatabase.product
+        <where>
+            <if test="productId!=0">
+                product_id = #{productId}
+            </if>
+            <if test="productName!=null">
+                AND product_name = #{productName}
+            </if>
+            <if test="productImage!=null">
+                AND product_image = #{productImage}
+            </if>
+            <if test="productDiscount!=0">
+                AND product_discount &lt; 1
+            </if>
+        </where>
+    </select>
+    <insert id="addProduct" parameterType="Product">
+        INSERT INTO cppdatabase.product (product_name, product_price, product_num, product_buy_num, product_image,
+                                         product_discount)
+        VALUES (#{productName}, #{productPrice}, #{productNum}, #{productBuyNum}, #{productImage}, #{productDiscount})
+    </insert>
+
+    <delete id="deleteProductByInfo">
+        DELETE FROM cppdatabase.product
+        <where>
+            <if test="productId!=0">
+                product_id=#{productId}
+            </if>
+            <if test="productName!=null">
+                AND product_name=#{productName};
+            </if>
+        </where>
+    </delete>
+
+    <update id="updateProductByInfo">
+        UPDATE cppdatabase.product
+        <set>
+            <if test="productName!=null">product_name=#{productName},</if>
+            <if test="productPrice!=0">product_price=#{productPrice},</if>
+            <if test="productNum!=-1000">product_num=#{productNum},</if>
+            <if test="productImage!=null">product_image=#{productImage},</if>
+            <if test="productDiscount!=0">product_discount=#{productDiscount},</if>
+            <if test="productBuyNum!=-1000">product_buy_num=#{productBuyNum}</if>
+        </set>
+        WHERE product_id = #{productId};
+    </update>
+
+    <select id="getProductLikeList" resultType="Product">
+        SELECT *
+        FROM cppdatabase.product
+        WHERE product_name LIKE "%"#{mess}"%";
+    </select>
+</mapper>
